@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,6 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+  /* background-color: white; */
   background-color: #242424;
 
   font-synthesis: none;
@@ -12,4 +19,136 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #7379e9;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 2em 15%;
+  box-shadow: 1px 1px 10px rgba(70, 78, 85, 0.5);
+}
+
+.header img {
+  width: 50px;
+}
+
+.main-section {
+  padding: 1em 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: rgb(27, 56, 56);
+  gap: 1em;
+}
+
+.main-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.main-top h2 {
+  font-size: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-section {
+  display: flex;
+  gap: 0.5em;
+}
+
+.userData-section {
+  display: flex;
+  gap: 3em;
+  /* background-color: blue; */
+}
+
+input {
+  font-size: 1.2em;
+  padding-left: 0.25em;
+}
+
+button {
+  width: 8em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.15em;
+}
+
+button:nth-child(2) {
+  background-color: rgb(8, 171, 8);
+}
+
+button:nth-child(2):hover {
+  background-color: rgb(3, 133, 3);
+}
+
+button:nth-child(3) {
+  background-color: rgb(234, 66, 29);
+}
+
+button:nth-child(3):hover {
+  background-color: rgb(196, 51, 18);
+}
+
+.main-data {
+  /* background-color: red; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+img {
+  width: 250px;
+  border-radius: 0.5em;
+}
+
+.user-follow {
+  display: flex;
+  gap: 1em;
+}
+
+.user-follow p {
+  width: 7em;
+  text-align: center;
+  border-radius: 0.25em;
+  font-weight: 700;
+  padding: 0.3em 0.2em;
+}
+
+.user-follow p:nth-child(1) {
+  background-color: #2630ea;
+}
+
+.user-follow p:nth-child(2) {
+  background-color: rgb(8, 171, 8);
+}
+
+.user-repos {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
 }
