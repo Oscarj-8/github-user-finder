@@ -62,12 +62,14 @@ function GithubUserFinder() {
 
       {userData && (
         <div className="userData-section">
-          <div>
+          <div className="main-data">
             <img src={userData.avatar_url} alt="User avatar" />
-            <h3>{userData.name}</h3>
+            <h2>{userData.name}</h2>
             <p>{userData.bio}</p>
-            <p>Followers: {userData.followers}</p>
-            <p>Following: {userData.following}</p>
+            <div className="user-follow">
+              <p>Followers: {userData.followers}</p>
+              <p>Following: {userData.following}</p>
+            </div>
           </div>
 
           {userRepos.length > 0 && (
