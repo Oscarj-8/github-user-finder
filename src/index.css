@@ -149,6 +149,6 @@ img {
 ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
+  flex-direction: column;
+  gap: 1em;
 }

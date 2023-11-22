@@ -28,10 +28,10 @@ function GithubUserFinder() {
 
   const fetchUserRepos = async () => {
     try {
-      const responce = await axios.get(
+      const response = await axios.get(
         `https://api.github.com/users/${username}/repos?per_page=100`
       );
-      setUserRepos(responce.data);
+      setUserRepos(response.data);
       setError(null);
     } catch (error) {
       setUserRepos([]);
@@ -74,14 +74,18 @@ function GithubUserFinder() {
 
           {userRepos.length > 0 && (
             <div className="user-repos">
-              <h3>Repositories:</h3>
+              <h3>Recent Repositories:</h3>
               <ul>
-                {userRepos.map((repo, index) => (
-                  <li key={repo.id}>
-                    {index + 1}
-                    {repo.name}
-                  </li>
-                ))}
+                {userRepos
+                  .sort(
+                    (a, b) => new Date(b.created_at) - new Date(a.created_at)
+                  )
+                  .slice(0, 10)
+                  .map((repo, index) => (
+                    <li key={repo.id}>
+                      {index + 1}. {repo.name}
+                    </li>
+                  ))}
               </ul>
             </div>
           )}
