@@ -110,6 +110,7 @@ button:nth-child(1) {
 
 button:nth-child(1):hover {
   background-color: rgb(3, 133, 3);
+  box-shadow: none;
 }
 
 button:nth-child(2) {
@@ -119,6 +120,7 @@ button:nth-child(2) {
 
 button:nth-child(2):hover {
   background-color: rgb(196, 51, 18);
+  box-shadow: none;
 }
 
 .main-data {
@@ -161,6 +163,26 @@ button:nth-child(2):hover {
   background-color: rgb(8, 171, 8);
 }
 
+.user-repos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+li {
+  border: 1px solid #5e6767;
+  padding: 1.125em;
+  border-radius: 1em;
+}
+
 /*
 .userData-section {
   display: flex;
@@ -172,15 +194,6 @@ button:nth-child(2):hover {
 
 
 
-.user-repos {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-}
 
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-} */
+
+ */
