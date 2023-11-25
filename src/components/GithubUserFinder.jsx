@@ -55,8 +55,10 @@ function GithubUserFinder() {
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
-          <button onClick={handleSearch}>Search</button>
-          <button onClick={handleClear}>Clear</button>
+          <div className="search-btns">
+            <button onClick={handleSearch}>Search</button>
+            <button onClick={handleClear}>Clear</button>
+          </div>
         </div>
       </div>
 
