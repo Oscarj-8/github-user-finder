@@ -76,16 +76,26 @@ function GithubUserFinder() {
 
           {userRepos.length > 0 && (
             <div className="user-repos">
-              <h3>Recent Repositories:</h3>
+              <h2>Recent Repositories</h2>
               <ul>
                 {userRepos
                   .sort(
                     (a, b) => new Date(b.created_at) - new Date(a.created_at)
                   )
                   .slice(0, 10)
-                  .map((repo, index) => (
+                  .map((repo) => (
                     <li key={repo.id}>
-                      {index + 1}. {repo.name}
+                      <div>
+                        <h3>{repo.name}</h3>
+                        {repo.description && <p>{repo.description}</p>}
+                      </div>
+                      <a
+                        href={repo.html_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <button>Go to repo</button>
+                      </a>
                     </li>
                   ))}
               </ul>

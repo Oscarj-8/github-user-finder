@@ -54,7 +54,7 @@ body {
 .main-section {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 3em;
   padding: 0 1em;
 }
 
@@ -95,7 +95,7 @@ input:hover {
   justify-content: space-between;
 }
 
-button {
+.search-btns button {
   width: 7em;
   height: 2.5em;
   padding: 0.5em;
@@ -103,24 +103,30 @@ button {
   border-radius: 0.375em;
 }
 
-button:nth-child(1) {
+.search-btns button:nth-child(1) {
   background-color: rgb(8, 171, 8);
   box-shadow: 0 1px 20px rgb(8, 171, 8);
 }
 
-button:nth-child(1):hover {
+.search-btns button:nth-child(1):hover {
   background-color: rgb(3, 133, 3);
   box-shadow: none;
 }
 
-button:nth-child(2) {
+.search-btns button:nth-child(2) {
   background-color: rgb(224, 66, 29);
   box-shadow: 0 1px 20px rgb(224, 66, 29);
 }
 
-button:nth-child(2):hover {
+.search-btns button:nth-child(2):hover {
   background-color: rgb(196, 51, 18);
   box-shadow: none;
+}
+
+.userData-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .main-data {
@@ -170,6 +176,9 @@ button:nth-child(2):hover {
   gap: 1em;
 }
 
+.user-repos h2 {
+  font-size: 1.3em;
+}
 ul {
   list-style: none;
   display: flex;
@@ -181,19 +190,17 @@ li {
   border: 1px solid #5e6767;
   padding: 1.125em;
   border-radius: 1em;
-}
-
-/*
-.userData-section {
   display: flex;
-  gap: 3em;
-
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
 }
 
-
-
-
-
-
-
- */
+.user-repos button {
+  background-color: #f4f4f4;
+  color: #242424;
+  padding: 0.7em;
+  border-radius: 0.375em;
+}
