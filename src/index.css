@@ -57,6 +57,7 @@ body {
   flex-direction: column;
   gap: 3em;
   padding: 0 1em;
+  align-items: center;
 }
 
 .main-top {
