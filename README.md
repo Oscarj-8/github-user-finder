@@ -23,15 +23,24 @@ To run the project locally, follow these steps:
 
 2. **Navigate to the Project Directory:**
 
+   ```bash
    cd github-user-finder
+
+   ```
 
 3. **Install Dependencies:**
 
+   ```bash
    npm install
+
+   ```
 
 4. **Run the Application:**
 
+   ```bash
    npm run dev
+
+   ```
 
 This will start the development server, and you can access the application at http://localhost:3000 or http://localhost:5173 in your browser.
 
@@ -53,19 +62,28 @@ This will start the development server, and you can access the application at ht
 
 If you'd like to contribute to the project, please follow these steps:
 
-Fork the repository.
+**Fork the repository**
 
 **Create a new branch:**
 
+```bash
 git checkout -b feature/new-feature
+
+```
 
 **Make your changes and commit them:**
 
+```bash
 git commit -m 'Add new feature'
+
+```
 
 **Push to the branch:**
 
+```bash
 git push origin feature/new-feature
+
+```
 
 **Open a pull request.**
 
