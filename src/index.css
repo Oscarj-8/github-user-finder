@@ -181,6 +181,7 @@ input:hover {
 .user-repos h2 {
   font-size: 1.3em;
 }
+
 ul {
   list-style: none;
   display: flex;
@@ -196,7 +197,6 @@ li {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
   gap: 1em;
 }
 
@@ -225,10 +225,39 @@ li {
   ul {
     padding: 0 4em;
   }
+
+  .user-repos {
+    padding: 0 2em;
+  }
 }
 
 @media (min-width: 834px) {
   .main-data {
-    padding: 0 6em;
+    padding: 0 5em;
+  }
+
+  .user-repos {
+    padding: 0;
+  }
+
+  ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  li {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .user-repos {
+    padding: 0 1em;
+  }
+
+  li {
+    width: 30%;
   }
 }
